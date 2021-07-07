@@ -6,10 +6,13 @@ h1 {
 }
 
 .card {
+    display: grid;
+    grid-template-columns: 1fr;
     background-color: $clr-card-bg;
     margin: 5rem 1rem;
 
     border-radius: 12px;
+    max-width: 1110px;
     .img-wrapper {
         position: relative;
         &::after {
@@ -40,7 +43,8 @@ h1 {
         align-items: center;
         text-align: center;
 
-        h1 { 
+        h1 {
+            max-width: 18ch;
             > span {
                 color: $clr-accent;
             }
@@ -48,7 +52,7 @@ h1 {
 
         p {
             color: $clr-white-off-75;
-            max-width: 28ch;
+            width: 28ch;
         }
     }
 
@@ -72,6 +76,99 @@ h1 {
     }
 }
 
+
+@media (min-width: 410px) {
+    body {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 500px) {
+    body {
+        font-size: 1.4rem;
+    }
+}
+
+@media (min-width: 600px) {
+    body {
+        font-size: 1.6rem;
+    }
+}
+
+@media (min-width: 720px) {
+    body {
+        font-size: 1.9rem;
+    }
+    
+    .card {
+        margin: 6% 8%;
+    }
+}
+
+@media (min-width: 1150px) {
+    body {
+        font-size: 1.1rem;
+    }
+
+    p {
+        letter-spacing: 1.2px;
+    }
+
+    .card {
+        margin: 6% auto;
+        grid-template-columns: 1fr .9fr;
+        .img-wrapper, main {
+            grid-row: 1;
+        }
+        .img-wrapper {
+            grid-column: 2;
+
+            &::after {
+                height: 100%;
+            }
+            img {
+                height: 100%;
+            }
+        }
+        main {
+            grid-column: 1;
+            padding: 60px 1rem;
+            padding-left: 5rem;
+        }
+        header {
+            text-align: left !important;
+            margin-bottom: 3rem;
+            gap: 1rem;
+            > * {
+                align-self: normal;
+            }
+
+            p {
+                width: 45ch;
+                font-size: .8rem;
+            }
+        }
+
+        section {
+            flex-direction: row;
+            .tags {
+                margin-right: 4rem;
+                text-align: justify;
+            }
+            
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                margin-top: 5px !important;
+                font-size: .8rem;
+            }
+        }
+    }
+
+
+}
 
 /*
 font-family: 'Inter', sans-serif
