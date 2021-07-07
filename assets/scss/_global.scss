@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+html{
+    font-size: 100%;
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    background-color: $clr-main-bg;
+    margin: 0;
+    height: 100vh;
+    color: $clr-white;
+    font-size: $font-size;
+}

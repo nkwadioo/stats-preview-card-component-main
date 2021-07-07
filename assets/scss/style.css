@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #090b1a;
+  margin: 0;
+  height: 100vh;
+  color: white;
+  font-size: 15px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.card {
+  background-color: #1b1938;
+  margin: 5rem 1rem;
+  border-radius: 12px;
+}
+
+.card .img-wrapper {
+  position: relative;
+}
+
+.card .img-wrapper::after {
+  border-radius: 12px 12px 0 0;
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 99%;
+  background-color: #5a048f8f;
+  z-index: 1;
+}
+
+.card .img-wrapper img {
+  border-radius: 12px 12px 0 0;
+}
+
+.card main {
+  padding: 40px 1rem;
+}
+
+.card header {
+  font-family: 'Inter', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.card header h1 > span {
+  color: #aa5cdb;
+}
+
+.card header p {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 28ch;
+}
+
+.card section {
+  font-family: 'Lexend Deca', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 16px;
+}
+
+.card section .tags {
+  text-transform: uppercase;
+}
+
+.card section .tags p {
+  margin-top: 11px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*
+font-family: 'Inter', sans-serif
+
+font-family: 'Lexend Deca', sans-serif
+*/
+/*# sourceMappingURL=style.css.map */
