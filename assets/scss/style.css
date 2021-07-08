@@ -153,6 +153,7 @@ h1 {
   }
   .card {
     margin: 6% auto;
+    margin-top: 10rem;
     -ms-grid-columns: 1fr .9fr;
         grid-template-columns: 1fr .9fr;
   }
@@ -202,7 +203,7 @@ h1 {
     margin-right: 4rem;
     text-align: justify;
   }
-  .card section h1 {
+  .card section .amount {
     font-size: 1.5rem;
   }
   .card section p {
