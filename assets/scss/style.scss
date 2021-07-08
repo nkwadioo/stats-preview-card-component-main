@@ -122,12 +122,13 @@ h1 {
         }
         .img-wrapper {
             grid-column: 2;
-
             &::after {
+                border-radius: 0 12px 12px 0;
                 height: 100%;
             }
             img {
                 height: 100%;
+                border-radius: 0 12px 12px 0;
             }
         }
         main {

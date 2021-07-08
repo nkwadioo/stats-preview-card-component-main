@@ -165,10 +165,12 @@ h1 {
     grid-column: 2;
   }
   .card .img-wrapper::after {
+    border-radius: 0 12px 12px 0;
     height: 100%;
   }
   .card .img-wrapper img {
     height: 100%;
+    border-radius: 0 12px 12px 0;
   }
   .card main {
     -ms-grid-column: 1;
